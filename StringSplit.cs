@@ -24,7 +24,7 @@ class Program
         //The mount of pairs should it be half of the lenght from the original string, when the lenght of the string is
         //even we cilling to the next integral number
         //create the array
-        int Length = (int)( str.Length/2 == 0 ? str.Length/2 : Math.Ceiling((double) str.Length/2 ));
+        int Length = (int)( str.Length % 2 == 0 ? str.Length/2 : Math.Ceiling((double) str.Length/2 ));
         string[] pairs = new string[Length];
 
 
